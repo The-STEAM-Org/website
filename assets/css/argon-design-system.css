@@ -14206,7 +14206,7 @@ button.bg-darker:focus {
 }
 
 .text-primary {
-    color: #5e72e4 !important;
+    color: #2dc2bd !important;
 }
 
 a.text-primary:hover,
@@ -16365,15 +16365,14 @@ a.btn-icon-only {
 
 .btn-facebook {
     color: #fff;
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    /* border-color: #000000; */
-    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    background-color: #ea4c89;
+    border-color: #ea4c89;
 }
 
 .btn-facebook:hover {
     color: #fff;
-    background-color: #f09433;
-    border-color: #f09433;
+    background-color: #eb2d76;
+    border-color: #eb2d76;
 }
 
 .btn-facebook:focus,
