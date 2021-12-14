@@ -1,0 +1,8 @@
+<footer>
+  <div class="socials">
+    <a *ngFor="let social of socials" href="{{ social.link }}"
+      ><i [class]="social.icon"></i
+    ></a>
+  </div>
+  <span>&copy; {{ year }} The STEAM Org</span>
+</footer>
