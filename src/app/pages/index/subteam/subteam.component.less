@@ -1,0 +1,77 @@
+@import "../../../../styles";
+
+.light {
+  background-color: @primary;
+  color: @background;
+}
+
+.dark {
+  background-color: @background;
+  color: @text;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+
+  > div {
+    margin: 0 20%;
+  }
+
+  .word {
+    font-size: 5vw;
+  }
+
+  .letter {
+    font-size: 20vw;
+    font-weight: bold;
+    color: @accent;
+  }
+
+  .twfo {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .topics {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .topic {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-basis: 300px;
+    }
+
+    i {
+      font-size: 72px;
+      color: @accent;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  section {
+    flex-direction: row !important;
+
+    > div {
+      flex: 1 !important;
+      margin: 0 20px !important;
+    }
+  }
+
+  .topics {
+    flex-direction: row !important;
+    justify-content: space-evenly !important;
+  }
+
+  .topic {
+    text-align: center;
+    margin: 0 5px;
+  }
+}

@@ -1,0 +1,89 @@
+@import "../../../styles.less";
+
+.intro {
+  margin: 0 50px;
+  text-align: left;
+  height: calc(100vh - 50px - 2rem) !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  .title {
+    font-size: 96px;
+    font-weight: bold;
+    color: @primary;
+    margin-bottom: 1rem;
+  }
+
+  .byline {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--text);
+    margin-bottom: 1rem;
+  }
+
+  .intro-logo {
+    display: none;
+  }
+
+  .steam {
+    color: @accent;
+  }
+}
+
+.wwd {
+  padding: 5%;
+  background-color: @primary;
+  color: @background;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wwd-header {
+  font-size: 48px;
+}
+
+.wwd-cards {
+  color: @text;
+  display: flex;
+  flex-direction: column;
+}
+
+.wwd-card {
+  flex: 1 1 0;
+  background-color: @background;
+  color: var(--text);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.wwd-icon {
+  color: @accent;
+  font-size: 50px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .intro {
+    text-align: left;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .intro-logo {
+      display: block;
+      width: 30vw;
+    }
+
+    .intro-logo {
+      width: 40vw;
+    }
+  }
+  .wwd-cards {
+    flex-direction: row !important;
+  }
+}

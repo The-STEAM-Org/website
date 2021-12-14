@@ -1,0 +1,53 @@
+<section class="intro">
+  <div>
+    <h1 class="title">The<br /><span class="steam">STEAM</span><br />Org</h1>
+    <h3 class="byline">
+      A platform for spreading engagement with Science, Technology, Engineering,
+      Art, and Math
+    </h3>
+  </div>
+  <div>
+    <img class="intro-logo" src="assets/logo_circle.png" alt="The STEAM Org" />
+  </div>
+</section>
+
+<section class="wwd">
+  <h1 class="wwd-header">What We Do</h1>
+
+  <div class="wwd-cards">
+    <div class="wwd-card">
+      <i class="wwd-icon fas fa-chalkboard"></i>
+      <h3 class="wwd-title">Workshops</h3>
+      <p class="description">
+        Learn more about a STEAM topic by joining one of our many informative
+        workshops hosted regularly
+      </p>
+    </div>
+
+    <div class="wwd-card">
+      <i class="wwd-icon fas fa-wrench"></i>
+      <h3 class="wwd-title">Kits</h3>
+      <p class="description">
+        Get hands on experience with STEAM through our affordable and carefully
+        crafted kits
+      </p>
+    </div>
+
+    <div class="wwd-card">
+      <i class="wwd-icon far fa-calendar-alt"></i>
+      <h3 class="wwd-title">Programs</h3>
+      <p class="description">
+        Network and learn with other intersted students through our interactive
+        programs
+      </p>
+    </div>
+  </div>
+
+  <div class="wwd-byline">
+    <p>Checkout what our subteams do below!</p>
+  </div>
+</section>
+
+<section class="subteams">
+  <app-subteam *ngFor="let team of subteams" [teaminfo]="team"></app-subteam>
+</section>

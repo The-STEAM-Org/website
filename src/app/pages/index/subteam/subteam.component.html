@@ -1,0 +1,18 @@
+<section [class]="subteam.index % 2 == 0 ? 'dark' : 'light'">
+  <div>
+    <h2 class="word">
+      <span class="letter">{{ subteam.subteam.charAt(0) }}</span
+      >{{ subteam.subteam.substr(1, subteam.subteam.length - 1) }}
+    </h2>
+  </div>
+  <div>
+    <h4 class="twfo">Topics we focus on</h4>
+    <div class="topics">
+      <div class="topic" *ngFor="let topic of subteam.topics">
+        <i [class]="topic.icon"></i>
+        <h3>{{ topic.name }}</h3>
+        <p>{{ topic.description }}</p>
+      </div>
+    </div>
+  </div>
+</section>
